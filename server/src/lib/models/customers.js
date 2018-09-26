@@ -11,4 +11,9 @@ const customerSchema = Schema({
   orders: [{ type: Schema.Types.ObjectId, ref: 'Orders' }],
 });
 
+customerSchema.pre('findById', function (next) {
+  this.populate('orders');
+  next();
+});
+
 export default mongoose.model('customers', customerSchema);
