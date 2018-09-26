@@ -1,0 +1,48 @@
+{
+  "name": "14-relationship-modeling",
+  "version": "1.0.0",
+  "description": "Lab for object relational modeling",
+  "main": "index.js",
+  "scripts": {
+    "watch": "DEBUG=express:router nodemon index.js",
+    "test": "jest **/*.test.js"
+  },
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/",
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Concross/14-relationship-modeling.git"
+  },
+  "author": "Connor Crossley",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Concross/14-relationship-modeling/issues"
+  },
+  "homepage": "https://github.com/Concross/14-relationship-modeling#readme",
+  "dependencies": {
+    "babel-plugin-react-constant-elements": "^1.0.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-react-constant-elements": "^6.23.0",
+    "babel-plugin-transform-react-inline-elements": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.17",
+    "morgan": "^1.9.1",
+    "require-dir": "^1.0.0",
+    "superagent": "^4.0.0-beta.5",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "dotenv": "^6.0.0",
+    "jest": "^23.6.0"
+  }
+}
